@@ -1,5 +1,9 @@
 import './style.scss';
 
+import Icon from '@mdi/react';
+import { mdiMenu } from '@mdi/js';
+import Button from '../Button';
+
 function NavBar() {
   const items = [
     'Currency',
@@ -11,6 +15,16 @@ function NavBar() {
   ]
   return(
     <nav className='navbar'>
+      <div className="navbar__menu-icon">
+        <Button
+          icon={
+            <Icon
+              path={mdiMenu}
+              size={1}
+            />
+          }
+        />
+      </div>
       <ul>
         {items.map(item => {
           return (

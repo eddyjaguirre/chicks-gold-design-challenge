@@ -1,13 +1,26 @@
 @import '../../variables.scss';
 
-nav.navbar {
+.navbar {
   flex-grow: 1;
   & > ul {
-    display: flex;
+    // display: flex;
+    display: none;
     gap: $horizontal-padding;
     & > li {
       list-style: none;
       font-size: 0.8rem;
+    }
+  }
+  &__menu-icon {
+    display: flex;
+    justify-content: flex-end; 
+  }
+  @media (min-width: $break-lg) {
+    & > ul {
+      display: flex;
+    }
+    &__menu-icon {
+      display: none; 
     }
   }
 }
