@@ -26,16 +26,19 @@ function Item(props: IItemProps) {
   const item = props.item;
 
   const [image, setImage] = useState(null);
+  const [icon, setIcon] = useState(null);
   useEffect(() => {
-    const fetchImage = async () => {
+    const fetchImage = async (folder: string, image: string, setFunction: Function) => {
       try {
-        const response = await import(`../../assets/items/${item.image}.png`);
-        setImage(response.default);
+        const response = await import(`../../assets/${folder}/${image}.png`);
+        // setImage(response.default);
+        setFunction(response.default)
       } catch (err) {
         console.log(err);
       }
     }
-    fetchImage();
+    fetchImage('items', item.image, setImage);
+    fetchImage('icons', item.game, setIcon);
   })
 
   return( 
@@ -59,8 +62,8 @@ function Item(props: IItemProps) {
         <div className='item__title'>
           { item.name }
         </div>
-        <div>
-          {item.game}
+        <div className='item__game-icon'>
+          {icon && <img src={icon}/>}
         </div>
       </div>
       <div className='item__prices-container'>

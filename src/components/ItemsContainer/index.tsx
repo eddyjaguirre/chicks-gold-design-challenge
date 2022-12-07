@@ -19,7 +19,7 @@ function ItemsContainer(props: IItemsContainerProps) {
       discount: 20,
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore at a, sequi ducimus, maxime mollitia labore atque, accusantium optio natus perspiciatis asperiores recusandae? Adipisci sapiente assumenda, natus rerum explicabo exercitationem.',
       inStock: true,
-      game: 'wow',
+      game: 'osrs',
       image: 'hat'
     },
     {

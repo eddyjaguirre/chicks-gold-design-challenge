@@ -3,11 +3,12 @@
 .stock-status {
   border: 1px solid $color-green;
   color: $color-green;
-  padding: 0.1rem 0.8rem;
+  padding: 0.5rem 0.8rem;
   font-size: 0.625rem;
   border-radius: 0.2rem;
   box-sizing: border-box;
   display: block;
+  line-height: 0;
   & .out-of-stock {
     border-color: $color-red;
     color: $color-red;
