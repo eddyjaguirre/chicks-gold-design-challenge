@@ -1,0 +1,15 @@
+@import '../../variables.scss';
+
+.search-bar {
+  @include input-container;
+  input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    color: $color-white;
+    font-size: 1rem;
+    &:focus-visible {
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+// Colors
+$color-primary: #5762d5;
+$color-secondary: #4c6085;
+$color-background: #303141;
+$color-background-main: #37384b;
+$color-background-darker: #2b2c3c;
+$color-green: #39e29d;
+$color-red: #dc3545;
+$color-black: #000000;
+$color-white: #ffffff;
+$color-transparent-white: rgba(255, 255, 255, 0.05);
+
+// Sizes
+$vertical-padding: 0.6rem;
+$horizontal-padding: 3rem;
+
+// Breakpoints
+$break-xl: 1280px;
+$break-lg: 1024px;
+$break-md: 768px;
+$break-sm: 640px;
+
+$border-radius: 0.25rem;
+
+@mixin input-container {
+  display: flex;
+  gap: 0.8rem;
+  background-color: $color-transparent-white;
+  padding: $vertical-padding 1rem;
+  border-radius: $border-radius;
+  min-height: 2rem;
+}

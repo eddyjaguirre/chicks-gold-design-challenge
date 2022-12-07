@@ -1,0 +1,13 @@
+@import '../../variables.scss';
+
+.header {
+  background-color: $color-background;
+  border-bottom: solid 1px $color-secondary;
+  display: flex;
+  align-items: center;
+  padding: $vertical-padding $horizontal-padding;
+  &__logo-container {
+    border-right: 1px solid white;
+    padding-right: $horizontal-padding; 
+  }
+}

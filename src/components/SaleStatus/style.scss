@@ -1,0 +1,10 @@
+@import '../../variables.scss';
+
+.on-sale {
+  font-size: 0.8rem;
+  &::before {
+    content: '•';
+    margin-right: 0.4rem;
+    color: $color-green;
+  }
+}
