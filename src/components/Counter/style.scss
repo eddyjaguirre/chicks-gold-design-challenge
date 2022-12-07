@@ -5,9 +5,9 @@
   max-width: 3.75rem;
   height: 40px;
   input {
+    @include input-container;
     width: 100%;
-    // margin: 0;
-    // box-sizing: border-box;
+    padding: 0.3rem 0.5rem;
   }
   &__buttons-container {
     display: flex;
