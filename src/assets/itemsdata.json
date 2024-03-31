@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "Weapon 1",
+    "price": 522.5,
+    "discount": 20,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore at a, sequi ducimus, maxime mollitia labore atque, accusantium optio natus perspiciatis asperiores recusandae? Adipisci sapiente assumenda, natus rerum explicabo exercitationem.",
+    "inStock": true,
+    "game": "re4",
+    "image": "items/w01.png"
+  },
+  {
+    "id": 2,
+    "name": "Weapon 2",
+    "price": 522.5,
+    "discount": 0,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore at a, sequi ducimus, maxime mollitia labore atque, accusantium optio natus perspiciatis asperiores recusandae? Adipisci sapiente assumenda, natus rerum explicabo exercitationem.",
+    "inStock": true,
+    "game": "re4",
+    "image": "items/w02.png"
+  },
+  {
+    "id": 3,
+    "name": "Weapon 3",
+    "price": 522.5,
+    "discount": 0,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore at a, sequi ducimus, maxime mollitia labore atque, accusantium optio natus perspiciatis asperiores recusandae? Adipisci sapiente assumenda, natus rerum explicabo exercitationem.",
+    "inStock": true,
+    "game": "re4",
+    "image": "items/w03.png"
+  },
+  {
+    "id": 4,
+    "name": "Weapon 4",
+    "price": 522.5,
+    "discount": 0,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore at a, sequi ducimus, maxime mollitia labore atque, accusantium optio natus perspiciatis asperiores recusandae? Adipisci sapiente assumenda, natus rerum explicabo exercitationem.",
+    "inStock": true,
+    "game": "re4",
+    "image": "items/w04.png"
+  },
+  {
+    "id": 5,
+    "name": "Weapon 5",
+    "price": 522.5,
+    "discount": 0,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore at a, sequi ducimus, maxime mollitia labore atque, accusantium optio natus perspiciatis asperiores recusandae? Adipisci sapiente assumenda, natus rerum explicabo exercitationem.",
+    "inStock": true,
+    "game": "re4",
+    "image": "items/w05.png"
+  },
+  {
+    "id": 6,
+    "name": "Weapon 6",
+    "price": 522.5,
+    "discount": 0,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore at a, sequi ducimus, maxime mollitia labore atque, accusantium optio natus perspiciatis asperiores recusandae? Adipisci sapiente assumenda, natus rerum explicabo exercitationem.",
+    "inStock": true,
+    "game": "re4",
+    "image": "items/w06.png"
+  },
+  {
+    "id": 7,
+    "name": "Weapon 7",
+    "price": 522.5,
+    "discount": 0,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore at a, sequi ducimus, maxime mollitia labore atque, accusantium optio natus perspiciatis asperiores recusandae? Adipisci sapiente assumenda, natus rerum explicabo exercitationem.",
+    "inStock": true,
+    "game": "re4",
+    "image": "items/w07.png"
+  },
+  {
+    "id": 8,
+    "name": "Weapon 8",
+    "price": 522.5,
+    "discount": 0,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore at a, sequi ducimus, maxime mollitia labore atque, accusantium optio natus perspiciatis asperiores recusandae? Adipisci sapiente assumenda, natus rerum explicabo exercitationem.",
+    "inStock": true,
+    "game": "re4",
+    "image": "items/w08.png"
+  },
+  {
+    "id": 9,
+    "name": "Weapon 9",
+    "price": 522.5,
+    "discount": 0,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore at a, sequi ducimus, maxime mollitia labore atque, accusantium optio natus perspiciatis asperiores recusandae? Adipisci sapiente assumenda, natus rerum explicabo exercitationem.",
+    "inStock": true,
+    "game": "re4",
+    "image": "items/w09.png"
+  },
+  {
+    "id": 10,
+    "name": "Weapon 10",
+    "price": 522.5,
+    "discount": 0,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore at a, sequi ducimus, maxime mollitia labore atque, accusantium optio natus perspiciatis asperiores recusandae? Adipisci sapiente assumenda, natus rerum explicabo exercitationem.",
+    "inStock": true,
+    "game": "re4",
+    "image": "items/w10.png"
+  },
+  {
+    "id": 11,
+    "name": "Weapon 11",
+    "price": 522.5,
+    "discount": 0,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore at a, sequi ducimus, maxime mollitia labore atque, accusantium optio natus perspiciatis asperiores recusandae? Adipisci sapiente assumenda, natus rerum explicabo exercitationem.",
+    "inStock": true,
+    "game": "re4",
+    "image": "items/w11.png"
+  },
+  {
+    "id": 12,
+    "name": "Weapon 12",
+    "price": 522.5,
+    "discount": 0,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore at a, sequi ducimus, maxime mollitia labore atque, accusantium optio natus perspiciatis asperiores recusandae? Adipisci sapiente assumenda, natus rerum explicabo exercitationem.",
+    "inStock": true,
+    "game": "re4",
+    "image": "items/w12.png"
+  },
+  {
+    "id": 13,
+    "name": "Weapon 13",
+    "price": 522.5,
+    "discount": 0,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore at a, sequi ducimus, maxime mollitia labore atque, accusantium optio natus perspiciatis asperiores recusandae? Adipisci sapiente assumenda, natus rerum explicabo exercitationem.",
+    "inStock": true,
+    "game": "re4",
+    "image": "items/w13.png"
+  },
+  {
+    "id": 14,
+    "name": "Weapon 14",
+    "price": 522.5,
+    "discount": 0,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore at a, sequi ducimus, maxime mollitia labore atque, accusantium optio natus perspiciatis asperiores recusandae? Adipisci sapiente assumenda, natus rerum explicabo exercitationem.",
+    "inStock": true,
+    "game": "re4",
+    "image": "items/w14.png"
+  },
+  {
+    "id": 15,
+    "name": "Weapon 15",
+    "price": 522.5,
+    "discount": 0,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore at a, sequi ducimus, maxime mollitia labore atque, accusantium optio natus perspiciatis asperiores recusandae? Adipisci sapiente assumenda, natus rerum explicabo exercitationem.",
+    "inStock": true,
+    "game": "re4",
+    "image": "items/w15.png"
+  }
+]

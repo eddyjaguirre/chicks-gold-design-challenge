@@ -1,0 +1,30 @@
+@import './base.css';
+
+#app {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--break-sm);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: var(--reak-md);
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: var(--break-lg);
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: var(--break-xl);
+  }
+}
