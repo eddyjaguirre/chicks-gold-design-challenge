@@ -20,8 +20,8 @@
           </ul>
         </div>
         <div class="footer__bottom-container">
-          <div>
-            <!-- <img :src="logo" alt="Chicks Gold Logo"/> -->
+          <div class="footer__bottom-image">
+            <img :src="logo" alt="Chicks Gold Logo" />
             <p>support@chicksgold.com</p>
           </div>
           <div class="footer__bottom-menu" v-for="(section, id) in sections" :key="id">
@@ -54,6 +54,8 @@ import twitter from '../../assets/icons/twitter.svg'
 import discord from '../../assets/icons/discord.svg'
 
 import trustpilot from '../../assets/icons/trust-pilot-5-star.svg'
+
+import logo from '../../assets/the-merchant-logo.png'
 
 import { ref } from 'vue'
 
@@ -128,13 +130,27 @@ const sections = ref([
   font-size: 0.8rem;
   justify-content: center;
 }
+.footer__bottom-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.footer__bottom-image img {
+  width: 60%;
+}
 .footer__bottom-menu {
   width: 100%;
   text-align: center;
+  margin-bottom: 16px;
 }
 .footer__bottom-menu h6 {
   margin: 0;
   font-size: 1.1rem;
+  margin-bottom: 20px;
 }
 .footer__bottom-menu ul {
   list-style: none;
@@ -150,6 +166,12 @@ const sections = ref([
   font-weight: 300;
 }
 @media (min-width: 768px) {
+  .footer__bottom-image {
+    align-items: flex-start;
+  }
+  .footer__bottom-image img {
+    width: 80%;
+  }
   .footer__bottom-container {
     flex-direction: row;
     align-items: flex-start;

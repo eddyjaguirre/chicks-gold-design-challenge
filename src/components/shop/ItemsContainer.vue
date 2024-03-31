@@ -1,5 +1,20 @@
 <template>
   <div class="items-container">
+    <h1>Condimentum consectetur</h1>
+    <div class="data-filter-container">
+      <div class="flex-1">
+        <Selector icon="swords" title="Select a game" />
+      </div>
+      <div class="flex-2">
+        <SearchBar />
+      </div>
+      <div class="flex-1">
+        <InputGroup>
+          <Selector icon="payments" title="Price" selected-option="All" :green="true" />
+          <Selector icon="edit" title="Item type" selected-option="All" :green="true" />
+        </InputGroup>
+      </div>
+    </div>
     <div class="items">
       <div class="items__grid">
         <Item v-for="item in items" :key="item.id" :item="item" />
@@ -11,6 +26,9 @@
 import { ref } from 'vue'
 
 import Item from './Item.vue'
+import SearchBar from './SearchBar.vue'
+import Selector from './Selector.vue'
+import InputGroup from './InputGroup.vue'
 import itemsdata from '@/assets/itemsdata.json'
 
 const items = ref(itemsdata)
@@ -29,7 +47,7 @@ const items = ref(itemsdata)
   border: 1px solid var(--color-primary);
   background-color: var(--color-background);
   border-radius: 5px;
-  padding: 3rem;
+  padding: 32px;
   width: 100%;
 }
 .items-container .items__grid {
@@ -64,11 +82,11 @@ const items = ref(itemsdata)
   }
 }
 @media (min-width: 1024px) {
+  .items-container .items {
+    padding: 48px;
+  }
   .items-container {
     padding: 7rem 0;
-  }
-  .items-container .data-filter-container {
-    flex-direction: row;
   }
   .items-container .items__grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -76,6 +94,9 @@ const items = ref(itemsdata)
   }
 }
 @media (min-width: 1280px) {
+  .items-container .data-filter-container {
+    flex-direction: row;
+  }
   .items-container .items__grid {
     grid-template-columns: repeat(5, minmax(0, 1fr));
     max-width: calc(var(--card-width) * 5 + var(--grid-spacing) * 4);

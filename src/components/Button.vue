@@ -27,8 +27,8 @@ const props = defineProps(['title', 'icon', 'full', 'primary', 'secondary', 'gre
 }
 .btn > div {
   border-radius: 5px;
-  padding: 0 1rem;
-  height: 2.5rem;
+  padding: 0 0.8rem;
+  height: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;

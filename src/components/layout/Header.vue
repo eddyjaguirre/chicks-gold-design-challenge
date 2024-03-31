@@ -12,6 +12,15 @@
             {{ item.toUpperCase() }}
             <span class="material-symbols-outlined">expand_more </span>
           </div>
+          <div class="header__navbar-item">
+            <div class="header__shopping-cart">
+              <span class="material-symbols-outlined">shopping_cart </span>
+              <span>Cart (5)</span>
+            </div>
+          </div>
+          <div class="header__navbar-item">
+            <Button title="Sign In" icon="person" :green="true" />
+          </div>
         </div>
       </div>
       <div class="header__container">
@@ -30,6 +39,10 @@
           </div>
         </div>
         <div class="header__user-container">
+          <div class="header__shopping-cart">
+            <span class="material-symbols-outlined">shopping_cart </span>
+            <span>Cart (5)</span>
+          </div>
           <Button title="Sign In" icon="person" :green="true" />
         </div>
       </div>
@@ -87,10 +100,13 @@ const openMenu = ref(false)
   font-size: 16px;
 }
 
-/* .header__logo-container {
-  border-right: 1px solid var(--color-text);
-  padding-right: var(--horizontal-padding);
-} */
+.header__mobile-menu .header__mobile-menu__navbar .header__shopping-cart span {
+  font-size: 16px;
+}
+
+.header__user-container {
+  display: none;
+}
 
 .header__logo-container img {
   max-width: 180px;
@@ -109,6 +125,17 @@ const openMenu = ref(false)
 .header__navbar-item span {
   font-size: 18px;
   margin-left: 2px;
+}
+
+.header__shopping-cart {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+}
+
+.header__shopping-cart span {
+  font-size: 13px;
 }
 
 .header__logo-container {
@@ -132,30 +159,20 @@ const openMenu = ref(false)
   }
   .header__navbar {
     display: flex;
-    gap: 12px;
     font-size: 12px;
-    padding: 0 40px;
+    padding-left: 40px;
     flex: 1;
+    gap: 24px;
   }
-  .header__navbar {
+  .header__user-container {
+    display: flex;
     gap: 24px;
   }
 }
 @media (min-width: 1280px) {
-  .header__navbar {
+  .header__navbar,
+  .header__user-container {
     gap: 36px;
   }
 }
-
-/* @media (min-width: var(--break-lg)) {
-  .header__logo-container {
-    border-right: 1px solid white;
-    padding-right: var(--horizontal-padding);
-  }
-  .header__container {
-    padding: var(--vertical-padding) var(--horizontal-padding);
-    margin: 0;
-    max-width: 100%;
-  }
-} */
 </style>

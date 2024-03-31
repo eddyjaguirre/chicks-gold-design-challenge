@@ -10,13 +10,13 @@
   --color-green: #39e29d;
   --color-red: #dc3545;
   --color-black: #000000;
-  --color-transparent-white: rgba(255, 255, 255, 0.05);
+  --color-transparent-background: rgba(76, 96, 133, 0.3);
 
   /* Sizes */
   --vertical-padding: 16px;
   --horizontal-padding: 48px;
   --border-radius: 4px;
-  --card-width: 250px;
+  --card-width: 220px;
   --grid-spacing: 16px;
 
   /* Breakpoints */

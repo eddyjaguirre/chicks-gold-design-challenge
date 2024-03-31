@@ -2,25 +2,31 @@
   <div class="item">
     <div class="item__status-container">
       <div class="item__status">
-        <div>[SALE STATUS]</div>
-        <div>[STOCK STATUS]</div>
+        <div v-if="item.discount > 0" class="item__onsale">ON SALE</div>
+        <StockStatus :in-stock="item.inStock" />
       </div>
-      <div class="item__counter">[COUNTER]</div>
+      <div class="item__counter">
+        <ItemCounter />
+      </div>
     </div>
     <div class="item__image">
       <img :src="fetchImage(imgUrl)" :alt="item.name" />
     </div>
-    <div class="item__title-container">
-      <div class="item__title">{{ item.name }}</div>
-    </div>
-    <div class="item__game-icon">
-      <img src="../../assets/icons/re4logo.svg" alt="" srcset="" />
-    </div>
-    <div class="item__prices-container">
-      <div v-if="item.discount > 0" class="item__discounted-price">
-        ${{ (item.price * (100.0 - item.discount)) / 100.0 }}
+    <div class="item__top">
+      <div class="item__title-container">
+        <div class="item__title">{{ item.name }}</div>
+        <div class="item__prices-container">
+          <div v-if="item.discount > 0" class="item__discounted-price">
+            ${{ (item.price * (100.0 - item.discount)) / 100.0 }}
+          </div>
+          <div class="item__price" :class="{ discounted: item.discount > 0 }">
+            ${{ item.price }}
+          </div>
+        </div>
       </div>
-      <div class="item__price" :class="{ discounted: item.discount > 0 }">${{ item.price }}</div>
+      <div class="item__game-icon">
+        <img src="../../assets/icons/re4logo.svg" alt="" srcset="" />
+      </div>
     </div>
     <div class="item__description">
       {{ item.description }}
@@ -33,6 +39,8 @@
 </template>
 <script setup>
 import Button from '@/components/Button.vue'
+import StockStatus from '@/components/shop/StockStatus.vue'
+import ItemCounter from '@/components/shop/ItemCounter.vue'
 // import { ref } from 'vue'
 const props = defineProps(['item'])
 const item = props.item
@@ -54,22 +62,27 @@ const fetchImage = (url) => {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 0.8rem;
-  width: 220px;
-  aspect-ratio: 1/2;
+  width: var(--card-width);
+  aspect-ratio: 1/1.5;
   margin: 0 auto;
 }
 .item__status-container,
 .item__status,
 .item__title-container,
 .item__prices-container,
-.item__buttons-container {
+.item__buttons-container,
+.item__top {
   display: flex;
-  gap: 0.5rem;
+  gap: 8px;
 }
 .item__status-container,
-.item__title-container {
+.item__title-container,
+.item__top {
   justify-content: space-between;
+}
+
+.item__title-container {
+  flex-direction: column;
 }
 .item__status {
   flex-direction: column;
@@ -128,5 +141,14 @@ const fetchImage = (url) => {
   justify-content: center;
   align-items: center;
   padding: 0.3rem 0.4rem;
+}
+
+.item__onsale {
+  font-size: 0.8rem;
+}
+.item__onsale::before {
+  content: '•';
+  margin-right: 0.4rem;
+  color: var(--color-green);
 }
 </style>
