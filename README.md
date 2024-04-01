@@ -1,14 +1,6 @@
-# chicks-gold-design-challenge
+# Chicks Gold Design Challenge
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+For this project I used the base design provided while changing the assets to resemble a page based on The Merchant from Resident Evil 4.
 
 ## Project Setup
 
